@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  background: url("./images/fondo1.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::after {
+  content: "";
+  background: rgba(26, 67, 109, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.page-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  position: relative;
+  z-index: 2;
+}
+
+.page-heading h1 {
+    
+    font-size: 200%;
+    font-family: 'Playfair Display', serif;
+    color:#86c1e6;
+}
+.page-heading label{
+
+   font-size: 150%;
+    font-family: 'Playfair Display', serif;
+    color:rgb(219, 214, 214);
+}
+.page-heading button {
+  width: 200px;
+  height: 30px;
+  background-color:#4584ac;
+
+  
+  font-size: 100%;
+  font-family: 'Playfair Display', serif;
+  color:white;
+
+  outline: none;
+  border: none;
+
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+.page-heading p {
+  font-size: 90%;
+  font-family: 'Playfair Display', serif;
+  color:rgb(54, 101, 189);
+}
+.page-heading td {
+  font-size: 90%;
+  font-family: 'Playfair Display', serif;
+  color:white;
+}
+.page-heading input[class="form-input"]{
+    width: 300px;
+    height: 30px;
+    background-color: rgb(155, 165, 221);
+    margin-top: 2%;
+    padding: 15px;
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: black;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+}
+.page-heading textarea{
+  width: 400px;
+  height: 30px;
+  background-color:rgb(155, 165, 221);
+  margin-top: 2%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: 'Abel', sans-serif;
+  color: black;
+
+  outline: none;
+  border: none;
+
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+.page-heading select{
+    width: 80px;
+    height: 20px;
+    background-color: rgb(155, 165, 221);
+ 
+    
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: black;
+  
+    outline: none;
+    border: none;
+  
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+}
+
+.page-heading form {
+  width: 1200px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (max-width: 600px) {
+  .page-heading h1 {
+    font-size: 3rem;
+  }
+}
+
